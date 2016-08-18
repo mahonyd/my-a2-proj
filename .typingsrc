@@ -1,0 +1,4 @@
+proxy=http://proxy.epa.ie:8888
+proxy=http://mahonyd:Aug16dlm@proxy.epa.ie:8888
+https-proxy=http://mahonyd:Aug16dlm@proxy.epa.ie:8888
+rejectUnauthorized=false
