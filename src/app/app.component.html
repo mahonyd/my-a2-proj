@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<div [style.color]="myColour">
+	Hello {{name}}
+</div>
+
+<input type="text" [value]="name" (keyup.enter)="name = $event.target.value">
+
+<button (click)="changeColour()">Change Colour</button>
+<br/>
+
+<app-customerlist></app-customerlist>

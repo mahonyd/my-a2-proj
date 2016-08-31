@@ -1,7 +1,7 @@
 module.exports = function(config) {
 
-  var appBase   = 'app/';      // transpiled app JS files
-  var appAssets ='/base/app/'; // component assets fetched by Angular's compiler
+  var appBase   = 'src/app/';       // transpiled app JS files
+  var appAssets = '/base/src/app/'; // component assets fetched by Angular's compiler
 
   config.set({
     basePath: '',
@@ -30,9 +30,10 @@ module.exports = function(config) {
       // Reflect and Zone.js
       'node_modules/reflect-metadata/Reflect.js',
       'node_modules/zone.js/dist/zone.js',
-      'node_modules/zone.js/dist/jasmine-patch.js',
       'node_modules/zone.js/dist/async-test.js',
       'node_modules/zone.js/dist/fake-async-test.js',
+      'node_modules/zone.js/dist/sync-test.js',
+      'node_modules/zone.js/dist/proxy-zone.js',
 
       // RxJs.
       { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
@@ -42,7 +43,7 @@ module.exports = function(config) {
       {pattern: 'node_modules/@angular/**/*.js', included: false, watched: false},
       {pattern: 'node_modules/@angular/**/*.js.map', included: false, watched: false},
 
-      {pattern: 'systemjs.config.js', included: false, watched: false},
+      {pattern: 'src/systemjs.config.js', included: false, watched: false},
       'karma-test-shim.js',
 
       // transpiled application & spec code paths loaded via module imports
