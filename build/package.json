@@ -1,0 +1,7 @@
+{
+    "name": "my-a2-proj",
+    "version": "1.0.0",
+    "dependencies": {
+        "express": "4.13.4"
+    }
+}
